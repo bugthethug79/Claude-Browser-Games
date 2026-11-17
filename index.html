@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Browser Games</title>
+<style>
+  :root { --bg: #f3f4f8; --card: #fff; --text: #1d2433; --muted: #6b7489; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111318; --card: #1b1f27; --text: #e7ebf3; --muted: #8a93a6; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, sans-serif; padding: 40px 16px; }
+  h1 { text-align: center; margin: 0 0 28px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; max-width: 760px; margin: 0 auto; }
+  a { display: block; background: var(--card); border-radius: 14px; padding: 22px; text-decoration: none; color: inherit;
+      box-shadow: 0 2px 12px rgba(0,0,0,.07); transition: transform .12s; }
+  a:hover { transform: translateY(-3px); }
+  .e { font-size: 36px; } h2 { margin: 8px 0 4px; font-size: 20px; } p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+</style>
+</head>
+<body>
+<h1>Browser Games</h1>
+<div class="grid">
+  <a href="blockfall.html"><div class="e">🧱</div><h2>Blockfall</h2><p>Falling-block line clearer with hold, ghost piece, 3-piece preview and levels.</p></a>
+  <a href="minefield.html"><div class="e">💣</div><h2>Minefield</h2><p>Find every mine. Safe first click, chording, flag mode, custom boards.</p></a>
+  <a href="snake.html"><div class="e">🐍</div><h2>Snake+</h2><p>Snake with modifiers: portals, mazes, wrap walls, and nine power-ups.</p></a>
+</div>
+</body>
+</html>
